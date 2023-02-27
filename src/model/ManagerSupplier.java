@@ -22,9 +22,9 @@ public class ManagerSupplier {
 		 
 	}
 	public static void main(String[] args) throws IOException {
-		String path ="Files\\";
+		String path ="trabajos_programacion_II\\Files\\";
 		String name ="Suppler";
 		ManagerSupplier ms = new ManagerSupplier(path,name);
-		ms.create("brayan", new Direction(),"adasd", "adadasd", "asdadasd");
+		ms.create("sapo", new Direction(),"adasd", "adadasd", "asdadasd");
 	}
 }
