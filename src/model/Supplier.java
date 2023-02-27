@@ -5,8 +5,8 @@ public class Supplier extends Person {
 	private String webPage;
 	private String phone;
 	
-	public Supplier(String name, Direction direction, String rut, String webPage, String phone) {
-		super(name, direction, rut);
+	public Supplier(String name, Address address, String rut, String webPage, String phone) {
+		super(name, address, rut);
 		this.webPage = webPage;
 		this.phone = phone;
 	}

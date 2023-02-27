@@ -3,13 +3,13 @@ package model;
 public class Person {
 	
 	private String name;
-	private Direction direction;
+	private Address address;
 	private String rut;
 	
-	public Person(String name, Direction direction, String rut) {
+	public Person(String name, Address address, String rut) {
 		super();
 		this.name = name;
-		this.direction = direction;
+		this.address = address;
 		this.rut = rut;
 	}
 	
@@ -19,11 +19,11 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Direction getDirection() {
-		return direction;
+	public Address getDirection() {
+		return address;
 	}
-	public void setDirection(Direction direction) {
-		this.direction = direction;
+	public void setDirection(Address address) {
+		this.address = address;
 	}
 	public String getRut() {
 		return rut;
