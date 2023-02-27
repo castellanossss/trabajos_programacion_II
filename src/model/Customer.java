@@ -18,6 +18,4 @@ public class Customer extends Person{
 	public void setPhone(ArrayList<String> phone) {
 		this.phone = phone;
 	}
-
-	
 }

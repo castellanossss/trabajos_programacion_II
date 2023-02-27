@@ -2,31 +2,143 @@ package view;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class View {
-    Scanner console;
-    public View(){
-        console = new Scanner(System.in);
-    }
-    public int readInt(String message) {
-        System.out.println(message);
-        return console.nextInt();
-    }
-    public String menu(){
-        String str= "a)Crear Proveedor\n"
-                +"b)Crear Cliente \n"
-                +"c)Crear Producto \n"
-                +"D)Registrar Venta\n"
-                +"E)Ver Las Ventas Totales\n";
-        return str;
-    }
-    public  void showMessageInt(int x){
-        System.out.println(x);
-    }
-    public void showMessage(String str){
-        System.out.println(str);
-    }
-    public long readLong(String message) {
-    	System.out.println(message);
-    	return console.nextLong();
-    }
+	
+	public void showMessage(String message) {
+		JOptionPane.showMessageDialog(null, message);
+	}
+	
+	public String readData(String message) {
+		String data = JOptionPane.showInputDialog(null, message);
+		return data;
+	}
+	
+	public void welcomeMessage() {
+		showMessage("¡BIENVENIDO AL SISTEMA DE ADMINISTRACION DE ALMACENES DE CADENA!");
+	}
+	
+	public void alertMessage() {
+		JOptionPane.showMessageDialog(null, "Por favor, ingresa una opcion valida" , null, JOptionPane.ERROR_MESSAGE);
+	}
+	
+	public void goodbyeMessage() {
+		showMessage("¡Programa finalizado, que tengas un excelente dia!");
+	}
+	
+	public int firstMenu() {
+		int option = Integer.parseInt(readData("~~~~~~~~~~~~~~~~~~~~~~~~~~\nBienvenido Usuario\n~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+				+ "Que deseas hacer?\n"
+				+ "1. Pasar al menu administrativo \n2. Salir \n~~~~~~~~~~~~~~~~~~~~~~~~~~\nDigita una opcion"));
+		return option;
+	}
+	
+	public int secondMenu() {
+		int option = Integer.parseInt(readData("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nOpciones Disponibles\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
+				+ "1. Crear Proveedor \n2. Crear Cliente \n3. Crear Producto \n4. Registrar Venta \n5. Ver las Ventas Totales \n6. Salir\n"
+				+ "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nDigita una opcion"));
+		return option;
+	}
+	
+	public String askForRut() {
+		String rut = readData("Ingresa el RUT del Proveedor");
+		return rut;
+	}
+	
+	public String askForName() {
+		String name = readData("Ingresa el Nombre Completo del Proveedor");
+		return name;
+	}
+	
+	public void addressInfoMessage() {
+		showMessage("A continuacion, ingresaras el pais, estado, ciudad, barrio y direccion del proveedor");
+	}
+	
+	public String askForCountry() {
+		String country = readData("Ingresa el Pais donde se ubica el Proveedor");
+		return country;
+	}
+	
+	public String askForState() {
+		String state = readData("Ingresa el Estado donde se ubica el Proveedor");
+		return state;
+	}
+	
+	public String askForCity() {
+		String city = readData("Ingresa la Ciudad donde se ubica el Proveedor");
+		return city;
+	}
+	
+	public String askForNeighbordhood() {
+		String neighbordhood = readData("Ingresa el Barrio donde se ubica el Proveedor");
+		return neighbordhood;
+	}
+	
+	public String askForAddress() {
+		String address = readData("Ingresa la Direccion donde se ubica el Proveedor");
+		return address;
+	}
+	
+	public String askForPhoneNumber() {
+		String phoneNumber = readData("Ingresa el Numero Telefonico del Proveedor");
+		return phoneNumber;
+	}
+	
+	public String askForWebPage() {
+		String webPage = readData("Ingresa la Pagina Web del Proveedor");
+		return webPage;
+	}
+	public String askForCustomerName() {
+		String CustomerName = readData("Ingresa el nombre del cliente:");
+		return CustomerName;
+	}
+	public String askForCustomerCountry() {
+		String city = readData("Ingresa el pais donde se ubica el cliente:");
+		return city;
+	}
+	public String askForCustomerState() {
+		String state = readData("Ingresa el Estado donde se ubica el cliente:");
+		return state;
+	}
+	public String askForCustomerCity() {
+		String city = readData("Ingresa el pais donde se ubica el cliente:");
+		return city;
+	}
+	public String askForCustomerNeighbordhood() {
+		String neighbordhood = readData("Ingresa el Barrio donde se ubica el cliente:");
+		return neighbordhood;
+	}
+	public String askForCustomerRut() {
+		String rut = readData("Ingresa el RUT del cliente");
+		return rut;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
