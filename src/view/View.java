@@ -1,6 +1,5 @@
 package view;
 
-import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
@@ -41,63 +40,181 @@ public class View {
 		return option;
 	}
 	
-	public String askForRut() {
+	public String askForSupRut() {
 		String rut = readData("Ingresa el RUT del Proveedor");
 		return rut;
 	}
 	
-	public String askForName() {
+	public String askForSupName() {
 		String name = readData("Ingresa el Nombre Completo del Proveedor");
 		return name;
 	}
 	
-	public void addressInfoMessage() {
+	public void addressSupInfoMessage() {
 		showMessage("A continuacion, ingresaras el pais, estado, ciudad, barrio y direccion del proveedor");
 	}
 	
-	public String askForCountry() {
+	public String askForSupCountry() {
 		String country = readData("Ingresa el Pais donde se ubica el Proveedor");
 		return country;
 	}
 	
-	public String askForState() {
+	public String askForSupState() {
 		String state = readData("Ingresa el Estado donde se ubica el Proveedor");
 		return state;
 	}
 	
-	public String askForCity() {
+	public String askForSupCity() {
 		String city = readData("Ingresa la Ciudad donde se ubica el Proveedor");
 		return city;
 	}
 	
-	public String askForNeighbordhood() {
+	public String askForSupNeighbordhood() {
 		String neighbordhood = readData("Ingresa el Barrio donde se ubica el Proveedor");
 		return neighbordhood;
 	}
 	
-	public String askForAddress() {
+	public String askForSupAddress() {
 		String address = readData("Ingresa la Direccion donde se ubica el Proveedor");
 		return address;
 	}
 	
-	public String askForPhoneNumber() {
+	public String askForSupPhoneNumber() {
 		String phoneNumber = readData("Ingresa el Numero Telefonico del Proveedor");
 		return phoneNumber;
 	}
 	
-	public String askForWebPage() {
+	public String askForSupWebPage() {
 		String webPage = readData("Ingresa la Pagina Web del Proveedor");
 		return webPage;
 	}
 	
+	public String askForCusRut() {
+		String rut = readData("Ingresa el RUT del Cliente");
+		return rut;
+	}
 	
+	public String askForCusName() {
+		String name = readData("Ingresa el Nombre Completo del Cliente");
+		return name;
+	}
 	
+	public void addressCusInfoMessage() {
+		showMessage("A continuacion, ingresaras el pais, estado, ciudad, barrio y direccion del cliente");
+	}
 	
+	public String askForCusCountry() {
+		String country = readData("Ingresa el Pais donde se ubica el Cliente");
+		return country;
+	}
 	
+	public String askForCusState() {
+		String state = readData("Ingresa el Estado donde se ubica el Cliente");
+		return state;
+	}
 	
+	public String askForCusCity() {
+		String city = readData("Ingresa la Ciudad donde se ubica el Cliente");
+		return city;
+	}
 	
+	public String askForCusNeighbordhood() {
+		String neighbordhood = readData("Ingresa el Barrio donde se ubica el Cliente");
+		return neighbordhood;
+	}
 	
+	public String askForCusAddress() {
+		String address = readData("Ingresa la Direccion donde se ubica el Cliente");
+		return address;
+	}
 	
+	public int askForPhoneNumberAmount() {
+		int amount = Integer.parseInt(readData("¿Cuantos numeros de celular del cliente quieres registrar?"));
+		return amount;
+	}
+	
+	public String askForCusPhoneNumber(int num) {
+		String phoneNumber = readData("Ingresa el Numero de Celular numero " + num + " de Cliente");
+		return phoneNumber;
+	}
+	
+	public int askForProId() {
+		int id = Integer.parseInt(readData("Ingresa el id del Producto"));
+		return id;
+	}
+	
+	public String askForProName() {
+		String name = readData("Ingresa el Nombre del Producto");
+		return name;
+	}
+	
+	public float askForProActualPrice() {
+		float actualPrice = Float.parseFloat(readData("Ingresa el Precio Actual del Producto"));
+		return actualPrice;
+	}
+	
+	public int askForProStock() {
+		int stock = Integer.parseInt(readData("Ingresa la Cantidad de Unidades Disponibles del Producto"));
+		return stock;
+	}
+	
+	public String askForProSupplier() {
+		String supplier = readData("Ingresa el Nombre del Proveedor del Producto");
+		return supplier;
+	}
+	
+	public void proCategoryInfo() {
+		showMessage("A continuacion, proporcionaras los datos de la categoria a la cual pertenece el producto");
+	}
+	
+	public int askForCatId() {
+		int id = Integer.parseInt(readData("Ingresa el id de la Categoria del Producto"));
+		return id;
+	}
+	
+	public String askForCatName() {
+		String category = readData("Ingresa el Nombre de la Categoria del Producto");
+		return category;
+	}
+	
+	public String askForCatDescription() {
+		String description = readData("Ingresa una Breve Descripcion sobre la Categoria del Producto");
+		return description;
+	}
+	
+	public int askForSaleId() {
+		int id = Integer.parseInt(readData("Ingresa el id de la Venta"));
+		return id;
+	}
+	
+	public void salesDateInfo() {
+		showMessage("A continuacion, vas a ingresar el año, mes y dia en el cual se efectuo la venta");
+	}
+	
+	public int askForSaleYear() {
+		int year = Integer.parseInt(readData("Ingresa el Año en el Cual se Efectuo la Venta"));
+		return year;
+	}
+	
+	public int askForSaleMonth() {
+		int month = Integer.parseInt(readData("Ingresa el Mes en el Cual se Efectuo la Venta (en numero)"));
+		return month;
+	}
+	
+	public int askForSaleDay() {
+		int day = Integer.parseInt(readData("Ingresa el Dia en el Cual se Efectuo la Venta"));
+		return day;
+	}
+	
+	public String askForSaleCustomer() {
+		String customer = readData("Ingresa el Nombre del Cliente al Cual se le Realizo la Venta");
+		return customer;
+	}
+	
+	public float askForSaleFinalBill() {
+		float finalBill = Float.parseFloat(readData("Ingresa el Valor Final de la Venta"));
+		return finalBill;
+	}
 	
 	
 	
