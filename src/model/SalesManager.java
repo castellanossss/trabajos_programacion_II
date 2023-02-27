@@ -6,7 +6,6 @@ import java.util.Date;
 import tools.FileManagerWriter;
 
 public class SalesManager {
-	private Product product;
 	private Sale sale;
 	private FileManagerWriter fm;
 	

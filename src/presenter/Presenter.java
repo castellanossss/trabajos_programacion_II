@@ -1,14 +1,16 @@
 package presenter;
 
-import model.ManagerSupplier;
+import model.SuppliersManager;
 
 public class Presenter {
-	ManagerSupplier supplier;
+	private SuppliersManager supplier;
 	
 	public void Run() {
 		
 	}
+	
 	public static void main(String[] args) {
 		
 	}
+	
 }
