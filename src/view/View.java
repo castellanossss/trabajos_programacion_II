@@ -101,7 +101,7 @@ public class View {
 		return state;
 	}
 	public String askForCustomerCity() {
-		String city = readData("Ingresa el pais donde se ubica el cliente:");
+		String city = readData("Ingresa la ciudad donde se ubica el cliente:");
 		return city;
 	}
 	public String askForCustomerNeighbordhood() {

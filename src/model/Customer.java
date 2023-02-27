@@ -10,7 +10,7 @@ public class Customer extends Person{
 	}
 	public void addPhone(String value) {
 		
-		
+	
 	}
 	public ArrayList<String> getPhone() {
 		return phone;
