@@ -5,7 +5,19 @@ public class Product {
 	private String name;
 	private float price;
 	private int stock;
+	private Supplier supplier;
+	private Category category;
 	
+	public Product(int id, String name, float price, int stock, Supplier supplier, Category category) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.price = price;
+		this.stock = stock;
+		this.supplier = supplier;
+		this.category = category;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -37,4 +49,21 @@ public class Product {
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
+	
+	public Supplier getSupplier() {
+		return supplier;
+	}
+	
+	public void setSupplier(Supplier supplier) {
+		this.supplier = supplier;
+	}
+	
+	public Category getCategory() {
+		return category;
+	}
+	
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+	
 }
