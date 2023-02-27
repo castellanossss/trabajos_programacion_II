@@ -6,6 +6,7 @@ public class Address {
 	private String state;
 	private String city;
 	private String neighbordhood;
+	private String adress;
 	
 	public Address() {
 		
@@ -18,6 +19,7 @@ public class Address {
 		this.city = city;
 		this.neighbordhood = neighbordhood;
 	}
-	
-	
+	public String toString() {
+		return "Country:"+country+",State:"+state+",city:"+city+",neighbordhood"+neighbordhood+",adress"+adress;
+	}	
 }
