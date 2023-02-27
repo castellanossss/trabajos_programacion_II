@@ -1,25 +1,19 @@
 package presenter;
 
-<<<<<<< HEAD
-import model.SuppliersManager;
-
-public class Presenter {
-=======
 import java.io.IOException;
-
 import model.Address;
 import model.CustomerManager;
-import model.SystemManager;
 import view.View;
 
 public class Presenter {
 	CustomerManager customer;
 	View view;
->>>>>>> master
+
 	
 	public Presenter() {
 		view = new View();
 	}
+	
 	public void Run() {
 		view.welcomeMessage();
 		
