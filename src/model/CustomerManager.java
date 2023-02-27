@@ -10,11 +10,17 @@ public class CustomerManager {
 	public CustomerManager(String path, String name) throws IOException {
 		fm = new FileManagerWriter(path, name);
 	}
-	public void createCustomer(String name, Address address, String rut,int j) {
+	public void createCustomer(String name, Address address, String rut) {
 		customer = new Customer( name,  address,rut);
 	}
-	public void registerEmployee(Customer customer) throws IOException {
+	public void registerCustomer(Customer customer) throws IOException {
 		fm.toWriter(customer.getName()+ ";" +customer.getRut() + ";" +customer.getDirection().toString());
+	}
+	public Customer getCustomer() {
+		return customer;
+	}
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
 	}
 	public void addPhone(String value) {
 		

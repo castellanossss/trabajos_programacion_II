@@ -89,6 +89,30 @@ public class View {
 		String webPage = readData("Ingresa la Pagina Web del Proveedor");
 		return webPage;
 	}
+	public String askForCustomerName() {
+		String CustomerName = readData("Ingresa el nombre del cliente:");
+		return CustomerName;
+	}
+	public String askForCustomerCountry() {
+		String city = readData("Ingresa el pais donde se ubica el cliente:");
+		return city;
+	}
+	public String askForCustomerState() {
+		String state = readData("Ingresa el Estado donde se ubica el cliente:");
+		return state;
+	}
+	public String askForCustomerCity() {
+		String city = readData("Ingresa el pais donde se ubica el cliente:");
+		return city;
+	}
+	public String askForCustomerNeighbordhood() {
+		String neighbordhood = readData("Ingresa el Barrio donde se ubica el cliente:");
+		return neighbordhood;
+	}
+	public String askForCustomerRut() {
+		String rut = readData("Ingresa el RUT del cliente");
+		return rut;
+	}
 	
 	
 	
