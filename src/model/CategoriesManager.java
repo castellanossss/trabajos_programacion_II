@@ -19,5 +19,4 @@ public class CategoriesManager {
 		category = new Category(id, name, description);
 		this.registerCategory(category);
 	}
-	
 }

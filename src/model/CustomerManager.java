@@ -10,11 +10,18 @@ public class CustomerManager {
 	public CustomerManager(String path, String name) throws IOException {
 		fm = new FileManagerWriter(path, name);
 	}
-	public void createCustomer(String name, Address address, String rut) {
+	public void createCustomer( String rut, String name,Address address) {
 		customer = new Customer( name,  address,rut);
 	}
 	public void registerCustomer(Customer customer) throws IOException {
-		fm.toWriter(customer.getName()+ ";" +customer.getRut() + ";" +customer.getDirection().toString());
+		fm.toWriter(customer.getRut()+ ";" +customer.getName() + ";" +customer.getDirection().toString()+";"+runNumber());
+	}
+	public String runNumber() {
+		String concat="";
+		for (int i = 0; i < customer.getPhone().size(); i++) {
+			concat +=customer.getPhone().get(i)+",";
+		}
+		return concat.substring(0, concat.length()-1);
 	}
 	public Customer getCustomer() {
 		return customer;
@@ -23,6 +30,6 @@ public class CustomerManager {
 		this.customer = customer;
 	}
 	public void addPhone(String value) {
-		
+		customer.getPhone().add(value);
 	}
 }
