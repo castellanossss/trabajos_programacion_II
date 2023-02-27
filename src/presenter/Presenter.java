@@ -1,9 +1,8 @@
 package presenter;
 
-import model.ManagerSupplier;
+import model.SuppliersManager;
 
 public class Presenter {
-	ManagerSupplier supplier;
 	
 	public void Run() {
 		
