@@ -16,6 +16,7 @@ public class FileManagerWriter {
 	}
 	
 	public void toWriter(String value) throws IOException {
+		
 		bw.write(value + "\n");
 		bw.close();
 	}

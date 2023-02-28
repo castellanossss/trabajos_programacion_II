@@ -22,11 +22,4 @@ public class SalesManager {
 		sale = new Sale(id, date, customer, discount, finalBill);
 		this.registerSale(sale);
 	}
-	
-	
-	
-	
-	
-	
-	
 }
