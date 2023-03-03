@@ -4,7 +4,6 @@ import model.SuppliersManager;
 import model.*;
 
 import java.io.IOException;
-
 import model.Address;
 import model.CustomerManager;
 import view.View;
@@ -15,11 +14,13 @@ public class Presenter {
 	ProductsManager product;
 	CategoriesManager categories;
 	View view;
+
 	
 	public Presenter() {
 		view = new View();
 	}
 	public void Run() throws IOException {
+
 		view.welcomeMessage();
 		this.firstDecision();
 	}
