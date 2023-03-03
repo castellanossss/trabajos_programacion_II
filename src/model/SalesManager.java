@@ -1,7 +1,7 @@
 package model;
 
 import java.io.IOException;
-import java.util.Date;
+import java.time.LocalDate;
 
 import tools.FileManagerWriter;
 
@@ -18,7 +18,7 @@ public class SalesManager {
 				";" + sale.getFinalBill());
 	}
 	
-	public void createSale(int id, Date date, Customer customer, long discount, float finalBill) throws IOException {
+	public void createSale(int id, LocalDate date, String customer, String discount, String finalBill) throws IOException {
 		sale = new Sale(id, date, customer, discount, finalBill);
 		this.registerSale(sale);
 	}

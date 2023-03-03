@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Customer extends Person{
 	ArrayList <String> phone;
 	public Customer(String name, Address address, String rut) {
-		super(name, address, rut);
+		super(rut, name, address);
 		phone = new ArrayList<String>();
 	}
 	public void addPhone(String value) {

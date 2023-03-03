@@ -1,19 +1,19 @@
 package model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Sale {
 	private int id;
-	private Date date;
-	private Customer customer;
-	private long discount;
-	private float finalBill;
+	private LocalDate date;
+	private String customerName;
+	private String discount;
+	private String finalBill;
 	
-	public Sale(int id, Date date, Customer customer, long discount, float finalBill) {
+	public Sale(int id, LocalDate date, String customerName, String discount, String finalBill) {
 		super();
 		this.id = id;
 		this.date = date;
-		this.customer = customer;
+		this.customerName = customerName;
 		this.discount = discount;
 		this.finalBill = finalBill;
 	}
@@ -26,35 +26,35 @@ public class Sale {
 		this.id = id;
 	}
 
-	public Date getDate() {
+	public LocalDate getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(LocalDate date) {
 		this.date = date;
 	}
 
-	public Customer getCustomer() {
-		return customer;
+	public String getCustomer() {
+		return customerName;
 	}
 
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
+	public void setCustomer(String customerName) {
+		this.customerName = customerName;
 	}
 
-	public long getDiscount() {
+	public String getDiscount() {
 		return discount;
 	}
 
-	public void setDiscount(long discount) {
+	public void setDiscount(String discount) {
 		this.discount = discount;
 	}
 
-	public float getFinalBill() {
+	public String getFinalBill() {
 		return finalBill;
 	}
 
-	public void setFinalBill(float finalBill) {
+	public void setFinalBill(String finalBill) {
 		this.finalBill = finalBill;
 	}
 

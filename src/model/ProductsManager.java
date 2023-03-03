@@ -16,7 +16,7 @@ public class ProductsManager {
 				product.getStock() + ";" + product.getSupplier() + ";" + product.getCategory());
 	}
 	
-	public void createProduct(int id, String name, float price, int stock, Supplier supplier, Category category) throws IOException {
+	public void createProduct(int id, String name, float price, int stock, String supplier, Category category) throws IOException {
 		product = new Product(id, name, price, stock, supplier, category);
 		this.registerProduct(product);
 	}

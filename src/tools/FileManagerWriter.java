@@ -19,5 +19,6 @@ public class FileManagerWriter {
 		bw.write(value + "\n");
 		bw.close();
 	}
+	
 }
 

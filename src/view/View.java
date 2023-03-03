@@ -1,6 +1,5 @@
 package view;
 
-
 import javax.swing.JOptionPane;
 
 public class View {
@@ -88,26 +87,32 @@ public class View {
 		String webPage = readData("Ingresa la Pagina Web del Proveedor");
 		return webPage;
 	}
+	
 	public String askForCustomerName() {
 		String CustomerName = readData("Ingresa el nombre del cliente:");
 		return CustomerName;
 	}
+	
 	public String askForCustomerCountry() {
 		String city = readData("Ingresa el pais donde se ubica el cliente:");
 		return city;
 	}
+	
 	public String askForCustomerState() {
 		String state = readData("Ingresa el Estado donde se ubica el cliente:");
 		return state;
 	}
+	
 	public String askForCustomerCity() {
 		String city = readData("Ingresa la ciudad donde se ubica el cliente:");
 		return city;
 	}
+	
 	public String askForCustomerNeighbordhood() {
 		String neighbordhood = readData("Ingresa el Barrio donde se ubica el cliente:");
 		return neighbordhood;
 	}
+	
 	public String askForCustomerRut() {
 		String rut = readData("Ingresa el RUT del cliente");
 		return rut;
@@ -233,6 +238,11 @@ public class View {
 	public String askForSaleCustomer() {
 		String customer = readData("Ingresa el Nombre del Cliente al Cual se le Realizo la Venta");
 		return customer;
+	}
+	
+	public long askForSaleDiscount() {
+		long discount = Long.parseLong(readData("Ingresa el valor del descuento realizado"));
+		return discount;
 	}
 	
 	public float askForSaleFinalBill() {

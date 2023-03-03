@@ -11,13 +11,21 @@ public class SuppliersManager {
 		fm = new FileManagerWriter(path, name);
 	}
 	
-	public void registerEmployee(Supplier supplier) throws IOException {
-		fm.toWriter(supplier.getName()+ ";" + supplier.getRut() + ";" + supplier.getWebPage());
+	public void registerSupplier(Supplier supplier) throws IOException {
+		fm.toWriter(supplier.getRut() + ";" + supplier.getName()+ ";" + supplier.getAddress() + ";" + supplier.getPhone() + ";" + supplier.getWebPage());
 	}
 	
-	public void createSupplier(String name, Address address, String rut, String webPage, String phone) throws IOException {
-		 supplier = new Supplier(name, address, rut, webPage, phone);
-		 this.registerEmployee(supplier);
+	public void createSupplier(String rut, String name, Address address, String phone, String webPage) throws IOException {
+		 supplier = new Supplier(rut, name, address, phone, webPage);
+		 this.registerSupplier(supplier);
+	}
+
+	public Supplier getSupplier() {
+		return supplier;
+	}
+
+	public void setSupplier(Supplier supplier) {
+		this.supplier = supplier;
 	}
 	
 }

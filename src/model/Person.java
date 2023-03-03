@@ -6,7 +6,7 @@ public class Person {
 	private Address address;
 	private String rut;
 	
-	public Person(String name, Address address, String rut) {
+	public Person(String name, String rut, Address address) {
 		this.name = name;
 		this.address = address;
 		this.rut = rut;
@@ -18,10 +18,10 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Address getDirection() {
+	public Address getAddress() {
 		return address;
 	}
-	public void setDirection(Address address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 	public String getRut() {
